@@ -11,29 +11,21 @@ services:
   
   web-blue-01:
     image: seduchub/siteblue:1.0
-    #ports:
-    #  - 8082:80
     networks:
       - proxy
 
   web-blue-02:
     image: seduchub/siteblue:1.0
-    #ports:
-    #  - 8082:80
     networks:
       - proxy
 
   web-green-01:
     image: seduchub/sitegreen:1.0
-    #ports:
-    #  - 8081:80
     networks:
       - proxy
   
   web-green-02:
     image: seduchub/sitegreen:1.0
-    #ports:
-    #  - 8081:80
     networks:
       - proxy
   
@@ -50,3 +42,4 @@ services:
 networks:
   proxy:
     driver: bridge
+    
