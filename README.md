@@ -35,9 +35,11 @@ Conexões simultâneas
 A superioridade do NGINX em lidar com conexões simultâneas, tempo de resposta e uso de recursos é óbvia quando ele é comparado com o Apache ou o Lighttpd. Ao optar por esse software, seu ambiente ficará 4x mais rápido.
 
 Assim sendo, atualmente o NGINX é identificado como um dos servidores web mais eficientes e leves do mercado. Ele suporta mais tráfego simultaneamente e também conta com uso mínimo de memória.
+
 Rico em recursos
 
 O NGINX Plus combina a funcionalidade de um servidor Web de alto desempenho, um poderoso balanceador de carga front-end e um cache de aceleração altamente escalável, para criar a plataforma ideal de ponta a ponta para seus aplicativos da web.
+
 Eficiência
 
 O NGINX pode servir um maior número de usuários sem usar recursos extras. Isso é uma vantagem sobre o Apache Server, que cria uma cópia para todas as outras solicitações que acabam com mais uso de RAM.
