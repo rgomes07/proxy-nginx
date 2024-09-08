@@ -2,11 +2,11 @@ Proxy NGINX
 
 NGINX: Para que serve o NGINX e como configurar sua função de proxy para containers docker.
 
-- O NGINX é um software open-sorce, projetado para atuar como um servidor web, tem função de proxy reverso, load balancer. O NGINX foi desenvolvido como forma de disponibilizar um baixo uso de memória, além de uma alta simultaneidade. Ele trabalha de forma que as solicitações sejam tratadas em um único thread. Isso evita que o servidor crie processos para cada solicitação.
+O NGINX é um software open-sorce, projetado para atuar como um servidor web, tem função de proxy reverso, load balancer. O NGINX foi desenvolvido como forma de disponibilizar um baixo uso de memória, além de uma alta simultaneidade. Ele trabalha de forma que as solicitações sejam tratadas em um único thread. Isso evita que o servidor crie processos para cada solicitação.
 
-- Esse estilo de processamento de conexão permite que o NGINX seja extremamente eficaz, mesmo com recursos limitados. Como o servidor é de encadeamento único e os processos não são gerados para lidar com cada nova conexão, a memória e o uso da CPU tendem a permanecer relativamente consistentes, mesmo em momentos de carga pesada.
+Esse estilo de processamento de conexão permite que o NGINX seja extremamente eficaz, mesmo com recursos limitados. Como o servidor é de encadeamento único e os processos não são gerados para lidar com cada nova conexão, a memória e o uso da CPU tendem a permanecer relativamente consistentes, mesmo em momentos de carga pesada.
 
-- O NGINX foi projetado desde o início para usar um algoritmo de tratamento de conexão sem bloqueio e orientado a eventos.
+O NGINX foi projetado desde o início para usar um algoritmo de tratamento de conexão sem bloqueio e orientado a eventos.
 
 Quais são as vantagens do NGINX?
 
