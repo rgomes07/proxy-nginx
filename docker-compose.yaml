@@ -1,0 +1,52 @@
+services:
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+    networks:
+      - proxy
+  
+  web-blue-01:
+    image: seduchub/siteblue:1.0
+    #ports:
+    #  - 8082:80
+    networks:
+      - proxy
+
+  web-blue-02:
+    image: seduchub/siteblue:1.0
+    #ports:
+    #  - 8082:80
+    networks:
+      - proxy
+
+  web-green-01:
+    image: seduchub/sitegreen:1.0
+    #ports:
+    #  - 8081:80
+    networks:
+      - proxy
+  
+  web-green-02:
+    image: seduchub/sitegreen:1.0
+    #ports:
+    #  - 8081:80
+    networks:
+      - proxy
+  
+  web-principal-01:
+    image: seduchub/siteimg:1.0
+    networks:
+      - proxy
+
+  web-principal-02:
+    image: seduchub/siteimg:1.0
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    driver: bridge
